@@ -1,5 +1,6 @@
 import { Shield } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -22,9 +23,11 @@ const Hero = () => {
         </p>
         
         <div className="flex gap-4 justify-center">
-          <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
-            Get Started
-          </Button>
+          <Link to="/assessment">
+            <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
+              Get Started
+            </Button>
+          </Link>
           <Button size="lg" variant="outline">
             Learn More
           </Button>
